@@ -96,11 +96,13 @@ label, a {
 	margin-left: -400%;
 }
 
-
 #active label {
+	padding: 0.5rem;
+}
+
+#active label .dot {
 	border-radius: 1rem;
 	display: inline-block;
-	margin: 0 0.25rem;
 	width: 1.5rem;
 	height: 1.5rem;
 	background: #bbb;
@@ -110,18 +112,19 @@ label, a {
 	margin: 13% 0% 0;
 	text-align: center;
 	float: right;
+	display: flex;
 }
 
-#active label:hover {
+#active label .dot:hover {
 	background: #fec10f;
 	border-color: #777777;
 }
 
-#switch1:checked ~ .bottom-container #active label:nth-child(1),
-#switch2:checked ~ .bottom-container #active label:nth-child(2),
-#switch3:checked ~ .bottom-container #active label:nth-child(3),
-#switch4:checked ~ .bottom-container #active label:nth-child(4),
-#switch5:checked ~ .bottom-container #active label:nth-child(5) {
+#switch1:checked ~ .bottom-container #active label:nth-child(1) .dot,
+#switch2:checked ~ .bottom-container #active label:nth-child(2) .dot,
+#switch3:checked ~ .bottom-container #active label:nth-child(3) .dot,
+#switch4:checked ~ .bottom-container #active label:nth-child(4) .dot,
+#switch5:checked ~ .bottom-container #active label:nth-child(5) .dot {
 	background: #045cbb;
 	border-color: #045cbb;
 }
