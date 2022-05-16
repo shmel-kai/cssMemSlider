@@ -5,7 +5,7 @@ html {
 	font-family: 'Open Sans', sans-serif;
 }
 
-body{
+body {
     margin: 0;
 	padding: 0;
     box-sizing: border-box;
@@ -28,39 +28,39 @@ h1 {
 	text-align: center;
 }
 
-#slider{
+#slider {
 	margin: 0 2rem;
 
 }
 
-#slides article{
+#slides article {
 	width: 20%;
 	float: left;
 }
 
-#slides .image{
+#slides .image {
 	width: 500%;
 	line-height: 0;
 }
 
-#container-overflow{
+#container-overflow {
 	width: 100%;
 	overflow: hidden;
 }
 
-article img{
+article img {
 	width: 100%;
 	border-radius: 2.4rem;
 }
 
-#desktop:checked ~ #slider{
+#desktop:checked ~ #slider {
 	max-width: 76rem;
 }
 
-label, a{
+label, a {
 	cursor: pointer;
 }
-.all{
+.all {
 	margin-top: 5rem;
 	display: flex;
     justify-content: center;
@@ -72,32 +72,32 @@ label, a{
 	height: 80%;
 }
 
-.all input{
+.all input {
 	display: none;
 }
 
-#switch1:checked ~ #slides .image{
+#switch1:checked ~ #slides .image {
 	margin-left: 0;
 }
 
-#switch2:checked ~ #slides .image{
+#switch2:checked ~ #slides .image {
 	margin-left: -100%;
 }
 
-#switch3:checked ~ #slides .image{
+#switch3:checked ~ #slides .image {
 	margin-left: -200%;
 }
 
-#switch4:checked ~ #slides .image{
+#switch4:checked ~ #slides .image {
 	margin-left: -300%;
 }
 
-#switch5:checked ~ #slides .image{
+#switch5:checked ~ #slides .image {
 	margin-left: -400%;
 }
 
 
-#active label{
+#active label {
 	border-radius: 1rem;
 	display: inline-block;
 	margin: 0 0.25rem;
@@ -106,13 +106,13 @@ label, a{
 	background: #bbb;
 }
 
-#active{
+#active {
 	margin: 13% 0% 0;
 	text-align: center;
 	float: right;
 }
 
-#active label:hover{
+#active label:hover {
 	background: #fec10f;
 	border-color: #777777;
 }
@@ -121,12 +121,12 @@ label, a{
 #switch2:checked ~ .bottom-container #active label:nth-child(2),
 #switch3:checked ~ .bottom-container #active label:nth-child(3),
 #switch4:checked ~ .bottom-container #active label:nth-child(4),
-#switch5:checked ~ .bottom-container #active label:nth-child(5){
+#switch5:checked ~ .bottom-container #active label:nth-child(5) {
 	background: #045cbb;
 	border-color: #045cbb;
 }
 
-#slides .image{
+#slides .image {
 	transition: all 500ms linear;
 }
 
@@ -136,16 +136,16 @@ label, a{
 	margin: 8% 0% 0;
 }
 
-#text-slides .text{
+#text-slides .text {
 	transition: all 500ms linear;
 }
 
-#text-slides .text{
+#text-slides .text {
 	width: 500%;
 	color: pink;
 }
 
-article span{
+article span {
     width: 100%;
     text-align: left;
     font-size: 3.5rem;
@@ -158,27 +158,27 @@ article span{
 	float: left;
 }
 
-#switch1:checked ~ .bottom-container #text-slides .text{
+#switch1:checked ~ .bottom-container #text-slides .text {
 	margin-left: 0;
 }
 
-#switch2:checked ~ .bottom-container #text-slides .text{
+#switch2:checked ~ .bottom-container #text-slides .text {
 	margin-left: -100%;
 }
 
-#switch3:checked ~ .bottom-container #text-slides .text{
+#switch3:checked ~ .bottom-container #text-slides .text {
 	margin-left: -200%;
 }
 
-#switch4:checked ~ .bottom-container #text-slides .text{
+#switch4:checked ~ .bottom-container #text-slides .text {
 	margin-left: -300%;
 }
 
-#switch5:checked ~ .bottom-container #text-slides .text{
+#switch5:checked ~ .bottom-container #text-slides .text {
 	margin-left: -400%;
 }
 
-#slider #text-slides{
+#slider #text-slides {
 	text-align: left;
 }
 
@@ -200,7 +200,7 @@ article span{
 		margin: 18% 0% 0;
 	}
 
-	#active{
+	#active {
 		margin: 35% 0% 0;
 		position: absolute;
 		top: calc(100% - 60%);
