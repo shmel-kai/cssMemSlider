@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+html {
+	font-size: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+	height: 100vh;
+}
+
+h1 {
+    text-align: center;
+	-webkit-text-stroke: 0.3rem #fec10f;
+    color: #fec10f;
+    font-weight: 700;
+    font-size: 6.4rem;
+    letter-spacing: 0.3rem;
+	padding: 5rem 0;
+	margin: 0;
+}
+
+#slider {
+    position: relative;
+	text-align: center;
+}
+
+#slider {
+	margin: 0 2rem;
+
+}
+
+#slides article {
+	width: 20%;
+	float: left;
+}
+
+#slides .image {
+	width: 500%;
+	line-height: 0;
+}
+
+#container-overflow {
+	width: 100%;
+	overflow: hidden;
+}
+
+article img {
+	width: 100%;
+	border-radius: 2.4rem;
+}
+
+#desktop:checked ~ #slider {
+	max-width: 76rem;
+}
+
+label, a {
+	cursor: pointer;
+}
+.all {
+	margin-top: 5rem;
+	display: flex;
+    justify-content: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-bottom: 0;
+	height: 80%;
+}
+
+.all input {
+	display: none;
+}
+
+#switch1:checked ~ #slides .image {
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image {
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image {
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image {
+	margin-left: -400%;
+}
+
+#active label {
+	padding: 0.5rem;
+}
+
+#active label .dot {
+	border-radius: 1rem;
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #bbb;
+}
+
+#active {
+	margin: 13% 0% 0;
+	text-align: center;
+	float: right;
+	display: flex;
+}
+
+#active label .dot:hover {
+	background: #fec10f;
+	border-color: #777777;
+}
+
+#switch1:checked ~ .bottom-container #active label:nth-child(1) .dot,
+#switch2:checked ~ .bottom-container #active label:nth-child(2) .dot,
+#switch3:checked ~ .bottom-container #active label:nth-child(3) .dot,
+#switch4:checked ~ .bottom-container #active label:nth-child(4) .dot,
+#switch5:checked ~ .bottom-container #active label:nth-child(5) .dot {
+	background: #045cbb;
+	border-color: #045cbb;
+}
+
+#slides .image {
+	transition: all 500ms linear;
+}
+
+#text-slides {
+	float: left;
+	width: 70%;
+	margin: 8% 0% 0;
+}
+
+#text-slides .text {
+	transition: all 500ms linear;
+}
+
+#text-slides .text {
+	width: 500%;
+	color: pink;
+}
+
+article span {
+    width: 100%;
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+#text-slides article { 
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+#switch1:checked ~ .bottom-container #text-slides .text {
+	margin-left: 0;
+}
+
+#switch2:checked ~ .bottom-container #text-slides .text {
+	margin-left: -100%;
+}
+
+#switch3:checked ~ .bottom-container #text-slides .text {
+	margin-left: -200%;
+}
+
+#switch4:checked ~ .bottom-container #text-slides .text {
+	margin-left: -300%;
+}
+
+#switch5:checked ~ .bottom-container #text-slides .text {
+	margin-left: -400%;
+}
+
+#slider #text-slides {
+	text-align: left;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+	h1{
+		font-weight: 600;
+		font-size: 4rem;
+		letter-spacing: 0.2rem;
+	}
+
+	#slider {
+		position: relative;
+	}
+
+	#text-slides {
+		float: left;
+		width: 70%;
+		margin: 18% 0% 0;
+	}
+
+	#active {
+		margin: 35% 0% 0;
+		position: absolute;
+		top: calc(100% - 60%);
+		right: calc(100% - 63%);
+	}   
+	
+	article span {
+		font-size: 2.2rem;
+		color: pink;
+		font-weight: 700;
+	}
+
+	#text-slides article {
+		display: block;
+		width: 20%;
+		margin: 0 auto;
+	}
+
+	#text-slides {
+		float: none;
+		width: 100%;
+		margin: 10rem 0% 0;
+	}
+}
+
